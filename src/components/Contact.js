@@ -30,10 +30,10 @@ const Contact = (props) => {
     console.log(name, email, message);
     emailjs
       .sendForm(
-        "service_8gyc73t",
-        "template_niocbog",
+        "service_8c1lwob",
+        "template_jrslrz7",
         e.target,
-        "user_ILIpR7l6aN7HnbwOQkHhO"
+        "user_Z5HFzKBGbgXYOTDVKNKRk"
       )
       .then(
         (result) => {
@@ -141,7 +141,7 @@ const Contact = (props) => {
                 ></FontAwesomeIcon>{" "}
                 Email
               </span>{" "}
-              <a href="mailto:esteban.salom@gmail.com">
+              <a href="mailto:max.cruz@delcaribefoodscr.com">
                 {props.data ? props.data.email : "loading"}
               </a>
             </p>
@@ -153,7 +153,7 @@ const Contact = (props) => {
         <div className="row">
           <div className="social">
             <ul>
-              <li>
+              {/* <li>
                 <a
                   target="_blank"
                   href={props.data ? props.data.instagram : "/"}
@@ -174,7 +174,7 @@ const Contact = (props) => {
                     className="fa"
                   ></FontAwesomeIcon>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   target="_blank"

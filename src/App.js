@@ -6,11 +6,11 @@ import Contact from "./components/Contact";
 const data = {
   Contact: {
     address: "Calle 112, La Asunción, Belén, Heredia.",
-    phone: "+506 84336258",
-    email: "max.cruz@deltropicofoods.com",
+    phone: "+506 7143 1977",
+    email: "max.cruz@delcaribefoodscr.com",
     instagram: "/",
     facebook: "/",
-    whatsapp: "https://wa.link/t2gq2q",
+    whatsapp: "wa.link/m7mzi9",
   },
 };
 

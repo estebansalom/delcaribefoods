@@ -101,7 +101,13 @@ label {
   font-family: "Open Sans", sans-serif;
   float: left; }
 
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-family: "Open Sans", sans-serif; }
+
 #contact .form-control {
+  font-family: "Open-Sans", sans-serif;
   display: block;
   width: 100%;
   padding: 6px 12px;
