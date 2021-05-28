@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "./resources/css/main.css";
+import Contact from "./components/Contact";
+
+const data = {
+  Contact: {
+    address: "Calle 112, La Asunción, Belén, Heredia.",
+    phone: "+506 84336258",
+    email: "max.cruz@deltropicofoods.com",
+    instagram: "/",
+    facebook: "/",
+    whatsapp: "https://wa.link/t2gq2q",
+  },
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Del Caribe Foods Web Page coming here soon.</h1>
+      <Contact data={data.Contact} />
     </div>
   );
 }
