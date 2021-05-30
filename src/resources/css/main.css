@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Gelion;
+  src: url("../fonts/gellion/Gelion-Regular.otf") format("opentype"); }
+
 * {
   box-sizing: border-box; }
 
@@ -26,12 +30,15 @@ h2 {
   margin: 0 0 20px 0;
   font-weight: 800;
   font-size: 36px;
-  color: #333; }
+  color: #1d8165; }
 
 h3 {
+  text-transform: uppercase;
+  color: #1d8165;
   font-size: 20px;
   font-weight: 600;
-  color: #333; }
+  color: #333;
+  margin-top: 0; }
 
 h4 {
   font-size: 18px;
@@ -54,30 +61,98 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%; }
+
+.header__container--base {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 115px;
+  padding-top: 40px;
+  justify-content: space-between;
+  background-color: #1d8165;
+  box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.84); }
+  .header__container--base > div > a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #f7ece0;
+    font-size: medium;
+    font-size: 1.5rem; }
+    .header__container--base > div > a:hover {
+      color: #d3c1ad; }
+
+.header__logo--base {
+  position: absolute;
+  top: 5px;
+  left: 55px;
+  height: 100px; }
+
+.header__home-container--base {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content: center; }
+
+.header__link-container--base {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content: space-evenly; }
+
+.landing__parallax-container--base {
+  width: 100%;
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.landing__about--base {
+  padding: 5% 5% 5%; }
+
+.landing__about-title--base {
+  padding-bottom: 5%; }
+
+.landing__about-container--base {
+  padding: 0 5%;
+  width: 70%;
+  font-size: 1.2rem; }
+
+.landing__about-image--base {
+  padding: 20px;
+  height: 300px;
+  margin-bottom: 30px; }
+  .landing__about-image--base > img {
+    height: 300px;
+    object-fit: cover; }
 
 #contact {
   padding: 2% 2% 15px;
-  background: linear-gradient(to bottom right, #3a3a3a 0%, #202020 100%);
-  color: rgba(255, 255, 255, 0.75); }
+  background-color: #f7ece0;
+  color: #1d8165; }
 
 #contact h2 {
-  color: #fff;
+  color: #1d8165;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px; }
 
 #contact h3 {
-  color: #fff;
+  color: #1d8165;
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400; }
 
 #contact a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75); }
+  color: #1d8165; }
   #contact a:hover {
-    color: rgba(255, 255, 255, 0.9); }
+    color: #1d8165; }
 
 #contact form {
   padding-top: 20px; }
@@ -87,13 +162,14 @@ li {
   text-align: left; }
 
 #contact .btn-custom {
-  margin: 30px 0;
+  margin: 20px 0;
   background: transparent;
-  border: 2px solid #fff; }
+  color: #1d8165;
+  border: 2px solid #1d8165; }
 
 #contact .btn-custom:hover {
-  color: #333333;
-  background: #fff; }
+  color: #f7ece0;
+  background: #1d8165; }
 
 label {
   font-size: 12px;
@@ -150,7 +226,7 @@ textarea {
   margin: 20px 0; }
 
 #contact .contact-item span {
-  color: white;
+  color: #1d8165;
   margin-bottom: 10px;
   display: block; }
 
@@ -158,9 +234,8 @@ textarea {
   margin-right: 10px; }
 
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 25px;
-  margin-top: 25px;
+  padding-top: 10px;
+  margin-top: 10px;
   text-align: center; }
   #contact .social > ul {
     padding: 0; }
@@ -174,10 +249,13 @@ textarea {
   width: 48px;
   height: 48px;
   padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #1d8165;
+  color: #1d8165;
   border-radius: 50%;
   transition: all 0.3s; }
+  #contact .social .fa:hover {
+    color: #f7ece0;
+    background: #1d8165; }
 
 .contact__main--base {
   display: flex;
@@ -198,7 +276,7 @@ textarea {
 
 .contact__button--base {
   font-family: "Open-Sans", sans-serif;
-  color: #ffffff;
+  color: #1d8165;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: lighter;
@@ -208,3 +286,16 @@ textarea {
   background-color: rgba(43, 43, 43, 0.911); }
   .contact__button--base:hover {
     background-color: rgba(59, 59, 59, 0.849); }
+
+@media (max-width: 1000px) {
+  .header__logo--base {
+    position: absolute;
+    top: 5px;
+    left: 25px; }
+  .header__home-container--base {
+    width: 25%; }
+  .header__link-container--base {
+    width: 75%;
+    font-size: 1.2rem; }
+  .landing__about-container--base {
+    padding: 0; } }

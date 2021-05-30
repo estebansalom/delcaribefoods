@@ -9,7 +9,7 @@ import {
 import {
   faInstagram,
   faFacebookF,
-  faWhatsappSquare,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 const initialState = {
   name: "",
@@ -149,11 +149,10 @@ const Contact = (props) => {
         </div>
       </div>
 
-      <div className="col-md-12">
-        <div className="row">
-          <div className="social">
-            <ul>
-              {/* <li>
+      <div className="row">
+        <div className="social">
+          <ul>
+            {/* <li>
                 <a
                   target="_blank"
                   href={props.data ? props.data.instagram : "/"}
@@ -163,31 +162,24 @@ const Contact = (props) => {
                     className="fa"
                   ></FontAwesomeIcon>
                 </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href={props.data ? props.data.facebook : "/"}
-                >
-                  <FontAwesomeIcon
-                    icon={faFacebookF}
-                    className="fa"
-                  ></FontAwesomeIcon>
-                </a>
               </li> */}
-              <li>
-                <a
-                  target="_blank"
-                  href={props.data ? props.data.whatsapp : "/"}
-                >
-                  <FontAwesomeIcon
-                    icon={faWhatsappSquare}
-                    className="fa"
-                  ></FontAwesomeIcon>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <a target="_blank" href={props.data ? props.data.facebook : "/"}>
+                <FontAwesomeIcon
+                  icon={faFacebookF}
+                  className="fa"
+                ></FontAwesomeIcon>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href={props.data ? props.data.whatsapp : "/"}>
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  className="fa"
+                ></FontAwesomeIcon>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,7 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./resources/css/main.css";
-import Contact from "./components/Contact";
+import Contact from "./components/contact/Contact.js";
+import Header from "./components/header/Header.js";
+import Parallax from "./components/parallax/Parallax";
+import SmoothScroll from "smooth-scroll";
+import About from "./components/about/About";
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true,
+});
 
 const data = {
   Contact: {
@@ -16,10 +25,14 @@ const data = {
 
 function App() {
   return (
-    <div className="App">
-      <h1>Del Caribe Foods Web Page coming here soon.</h1>
-      <Contact data={data.Contact} />
-    </div>
+    <Router>
+      <div className="App">
+        <Header></Header>
+        <Parallax></Parallax>
+        <About></About>
+        <Contact data={data.Contact} />
+      </div>
+    </Router>
   );
 }
 

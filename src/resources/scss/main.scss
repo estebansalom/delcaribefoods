@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gelion;
+  src: url("../fonts/gellion/Gelion-Regular.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,12 +34,15 @@ h2 {
   margin: 0 0 20px 0;
   font-weight: 800;
   font-size: 36px;
-  color: #333;
+  color: rgb(29, 129, 101);
 }
 h3 {
+  text-transform: uppercase;
+  color: rgb(29, 129, 101);
   font-size: 20px;
   font-weight: 600;
   color: #333;
+  margin-top: 0;
 }
 h4 {
   font-size: 18px;
@@ -58,28 +66,133 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
+}
+
+.header {
+  &__container {
+    &--base {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      height: 115px;
+      padding-top: 40px;
+      justify-content: space-between;
+      background-color: rgb(29, 129, 101);
+      box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.84);
+      & > div > a {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: rgb(247, 236, 224);
+        font-size: medium;
+        font-size: 1.5rem;
+        &:hover {
+          color: #d3c1ad;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    &--base {
+      position: absolute;
+      top: 5px;
+      left: 55px;
+      height: 100px;
+    }
+  }
+
+  &__home {
+    &-container {
+      &--base {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__link {
+    &-container {
+      &--base {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        justify-content: space-evenly;
+      }
+    }
+
+    &--base {
+    }
+  }
+}
+
+.landing {
+  &__container {
+    &--base {
+    }
+  }
+  &__parallax-container {
+    &--base {
+      width: 100%;
+      height: 95vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__about {
+    &--base {
+      padding: 5% 5% 5%;
+    }
+    &-title {
+      &--base {
+        padding-bottom: 5%;
+      }
+    }
+    &-container {
+      &--base {
+        padding: 0 5%;
+        width: 70%;
+        font-size: 1.2rem;
+      }
+    }
+    &-image {
+      &--base {
+        padding: 20px;
+        height: 300px;
+        margin-bottom: 30px;
+        & > img {
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 #contact {
   padding: 2% 2% 15px;
-  background: linear-gradient(
-    to bottom right,
-    rgb(58, 58, 58) 0%,
-    rgb(32, 32, 32) 100%
-  );
-  color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(247, 236, 224);
+  color: rgb(29, 129, 101);
 }
 
 #contact h2 {
-  color: #fff;
+  color: rgb(29, 129, 101);
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
 #contact h3 {
-  color: #fff;
+  color: rgb(29, 129, 101);
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
@@ -87,9 +200,9 @@ li {
 
 #contact a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(29, 129, 101);
   &:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(29, 129, 101);
   }
 }
 
@@ -101,13 +214,14 @@ li {
   text-align: left;
 }
 #contact .btn-custom {
-  margin: 30px 0;
+  margin: 20px 0;
   background: transparent;
-  border: 2px solid #fff;
+  color: rgb(29, 129, 101);
+  border: 2px solid rgb(29, 129, 101);
 }
 #contact .btn-custom:hover {
-  color: #333333;
-  background: #fff;
+  color: rgb(247, 236, 224);
+  background: rgb(29, 129, 101);
 }
 label {
   font-size: 12px;
@@ -166,7 +280,7 @@ textarea {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(29, 129, 101);
   margin-bottom: 10px;
   display: block;
 }
@@ -174,9 +288,8 @@ textarea {
   margin-right: 10px;
 }
 #contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 25px;
-  margin-top: 25px;
+  padding-top: 10px;
+  margin-top: 10px;
   text-align: center;
   & > ul {
     padding: 0;
@@ -191,10 +304,14 @@ textarea {
   width: 48px;
   height: 48px;
   padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid rgb(29, 129, 101);
+  color: rgb(29, 129, 101);
   border-radius: 50%;
   transition: all 0.3s;
+  &:hover {
+    color: rgb(247, 236, 224);
+    background: rgb(29, 129, 101);
+  }
 }
 
 .contact {
@@ -229,7 +346,7 @@ textarea {
   &__button {
     &--base {
       font-family: "Open-Sans", sans-serif;
-      color: #ffffff;
+      color: rgb(29, 129, 101);
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: lighter;
@@ -241,5 +358,38 @@ textarea {
         background-color: rgba(59, 59, 59, 0.849);
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__logo {
+      &--base {
+        position: absolute;
+        top: 5px;
+        left: 25px;
+      }
+    }
+
+    &__home {
+      &-container {
+        &--base {
+          width: 25%;
+        }
+      }
+    }
+
+    &__link {
+      &-container {
+        &--base {
+          width: 75%;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .landing__about-container--base {
+    padding: 0;
   }
 }
