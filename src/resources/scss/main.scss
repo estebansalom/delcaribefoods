@@ -424,8 +424,9 @@ textarea {
     &__logo {
       &--base {
         position: absolute;
-        top: 5px;
-        left: 25px;
+        top: 25px;
+        left: 15px;
+        height: 60px;
       }
     }
 
@@ -441,7 +442,10 @@ textarea {
       &-container {
         &--base {
           width: 75%;
-          font-size: 1rem;
+          & > a {
+            margin-top: 5px;
+            font-size: 1.2rem !important;
+          }
         }
       }
     }

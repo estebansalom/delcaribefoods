@@ -327,13 +327,16 @@ textarea {
 @media (max-width: 1000px) {
   .header__logo--base {
     position: absolute;
-    top: 5px;
-    left: 25px; }
+    top: 25px;
+    left: 15px;
+    height: 60px; }
   .header__home-container--base {
     width: 25%; }
   .header__link-container--base {
-    width: 75%;
-    font-size: 1rem; }
+    width: 75%; }
+    .header__link-container--base > a {
+      margin-top: 5px;
+      font-size: 1.2rem !important; }
   .contact__main--base {
     width: 90%; }
   .landing__parallax-container--base {
