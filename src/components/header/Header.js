@@ -21,21 +21,21 @@ export default function Header() {
           activeClassName="selected"
           className="header__home--base"
         >
-          Products
+          Productos
         </a>
         <a
           href="#about"
           activeClassName="selected"
           className="header__home--base"
         >
-          About Us
+          Nosotros
         </a>
         <a
           href="#contact"
           activeClassName="selected"
           className="header__home--base"
         >
-          Contact Us
+          Contacto
         </a>
       </div>
     </div>

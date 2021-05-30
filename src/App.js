@@ -7,6 +7,7 @@ import Header from "./components/header/Header.js";
 import Parallax from "./components/parallax/Parallax";
 import SmoothScroll from "smooth-scroll";
 import About from "./components/about/About";
+import Products from "./components/products/Products";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -28,6 +29,7 @@ function App() {
     <Router>
       <div className="App">
         <Header></Header>
+        <Products></Products>
         <Parallax></Parallax>
         <About></About>
         <Contact data={data.Contact} />

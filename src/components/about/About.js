@@ -4,7 +4,7 @@ export default function About(props) {
   return (
     <div id="about" className="landing__about--base section">
       <div className="title-underline">
-        <h2 className="landing__about-title--base">About Us</h2>
+        <h2 className="landing__about-title--base">Sobre Nosotros</h2>
       </div>
       <div className="row landing__about-info--base">
         <div className="landing__about-image--base">

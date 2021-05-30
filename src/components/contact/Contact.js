@@ -47,75 +47,71 @@ const Contact = (props) => {
   };
   return (
     <div id="contact">
-      <h2>Contact Us</h2>
+      <h2>Contáctenos</h2>
       <div className="row">
-        <div className="col-md-8">
-          <div className="contact__main--base">
-            <div className="contact__title--base">
-              <p>
-                Please fill out the following form with your complete contact
-                information and we will be contacting you as soon as posible.
-              </p>
-            </div>
-            <form name="sentMessage" validate onSubmit={handleSubmit}>
-              <div className="row contact__input-row--base">
-                <div className="form-group contact__input--base">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="form-control"
-                    placeholder="Name"
-                    required
-                    onChange={handleChange}
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div className="form-group contact__input--base">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="form-control"
-                    placeholder="Email"
-                    required
-                    onChange={handleChange}
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
-              <div className="form-group">
-                <textarea
-                  name="message"
-                  id="message"
+        <div className="contact__main--base">
+          <div className="contact__title--base">
+            <p>
+              Por favor ingrese su información de forma completa en el
+              formulario presentado a continuación y uno de nuestros
+              representantes se comunicará con usted en cuanto sea posible.
+            </p>
+          </div>
+          <form name="sentMessage" validate onSubmit={handleSubmit}>
+            <div className="row contact__input-row--base">
+              <div className="form-group contact__input--base">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
                   className="form-control"
-                  rows="6"
-                  placeholder="Message"
+                  placeholder="Nombre"
                   required
                   onChange={handleChange}
-                ></textarea>
+                />
                 <p className="help-block text-danger"></p>
               </div>
-              <div id="success"></div>
-              <button
-                type="submit"
-                className="btn-custom contact__button--base"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+              <div className="form-group contact__input--base">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Correo electrónico"
+                  required
+                  onChange={handleChange}
+                />
+                <p className="help-block text-danger"></p>
+              </div>
+            </div>
+            <div className="form-group">
+              <textarea
+                name="message"
+                id="message"
+                className="form-control"
+                rows="6"
+                placeholder="Mensaje"
+                required
+                onChange={handleChange}
+              ></textarea>
+              <p className="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" className="btn-custom contact__button--base">
+              Enviar Mensaje
+            </button>
+          </form>
         </div>
         <div className="contact-info">
           <div className="contact-item">
-            <h3>Contact Information</h3>
+            <h3>Información de contacto</h3>
             <p>
               <span>
                 <FontAwesomeIcon
                   icon={faLocationArrow}
                   className="fa"
                 ></FontAwesomeIcon>{" "}
-                Address
+                Dirección
               </span>
               {props.data ? props.data.address : "loading"}
             </p>
@@ -127,7 +123,7 @@ const Contact = (props) => {
                   icon={faPhone}
                   className="fa fa-phone"
                 ></FontAwesomeIcon>{" "}
-                Phone
+                Teléfono
               </span>{" "}
               {props.data ? props.data.phone : "loading"}
             </p>
@@ -139,7 +135,7 @@ const Contact = (props) => {
                   icon={faEnvelopeOpen}
                   className="fa fa-envelope-o"
                 ></FontAwesomeIcon>{" "}
-                Email
+                Correo electrónico
               </span>{" "}
               <a href="mailto:max.cruz@delcaribefoodscr.com">
                 {props.data ? props.data.email : "loading"}
