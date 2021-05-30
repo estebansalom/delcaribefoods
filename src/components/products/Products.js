@@ -7,7 +7,7 @@ export default function Products() {
       <div className="landing__products--base">
         <div className="landing__product landing__product--left">
           <img
-            src="/img/plantain-chips.jpeg"
+            src="https://res.cloudinary.com/esalomc/image/upload/v1622354098/plantain-chips.jpg"
             alt=""
             className="landing__product-image landing__product-image--left"
           />
@@ -26,7 +26,7 @@ export default function Products() {
         </div>
         <div className="landing__product landing__product--right">
           <img
-            src="/img/yuca-chips.jpeg"
+            src="https://res.cloudinary.com/esalomc/image/upload/v1622354098/yuca-chips.jpg"
             alt=""
             className="landing__product-image landing__product-image--right"
           />
@@ -44,7 +44,7 @@ export default function Products() {
         </div>
         <div className="landing__product landing__product--left">
           <img
-            src="/img/camote-chips.jpeg"
+            src="https://res.cloudinary.com/esalomc/image/upload/v1622354098/camote-chips.jpg"
             alt=""
             className="landing__product-image landing__product-image--left"
           />
