@@ -6,7 +6,7 @@ export default function Parallax(props) {
       id="page-top"
       className="landing__parallax-container--base"
       style={{
-        backgroundImage: `url(/img/your-logo-here.png)`,
+        backgroundImage: `url(https://res.cloudinary.com/esalomc/image/upload/v1622745417/your-brand-here.jpg)`,
       }}
     ></div>
   );

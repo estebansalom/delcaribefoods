@@ -30,6 +30,13 @@
                 "cuts":[
                     {"name":"Circular"}
                 ]
+            },
+            {
+                "name": "Yuca",
+                "description":"Exploramos nuevas tendencias como la producción de yuca congelada, disponibles en presentación:",
+                "cuts":[
+                    {"name":"Circular"}
+                ]
             }
         ]
     },
