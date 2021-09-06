@@ -59,7 +59,7 @@ export default function Products() {
             </div>
           </div>
         </div>
-        {/* <div className="landing__product landing__product--right">
+        <div className="landing__product landing__product--right">
           <img
             src="https://res.cloudinary.com/esalomc/image/upload/v1622354098/yuca-congelada.jpg"
             alt=""
@@ -95,7 +95,7 @@ export default function Products() {
               </ul>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
