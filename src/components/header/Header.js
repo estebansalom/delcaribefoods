@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
+import { useWindowWidthAndHeight } from "../../hooks/customhooks";
+import LanguageSelector from "../langaugeSelector/LanguageSelector";
+import LargeNavigation from "./LargeNavigation";
+import SmallNavigation from "./SmallNavigation";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Header(props) {
+  const [width, height] = useWindowWidthAndHeight();
   return (
     <div className="row header__container--base">
       <div className="header__home-container--base">
@@ -12,39 +19,15 @@ export default function Header(props) {
           <img className="header__logo--base" src="/img/logo-claro.png"></img>
         </a>
       </div>
-      <div className="header__link-container--base">
-        <a
-          href="#products"
-          activeClassName="selected"
-          className="header__home--base"
-        >
-          <FormattedMessage
-            id="app.header.products"
-            defaultMessage="Products"
-          ></FormattedMessage>
-        </a>
-        <a
-          href="#about"
-          activeClassName="selected"
-          className="header__home--base"
-        >
-          <FormattedMessage
-            id="app.header.about"
-            defaultMessage="About Us"
-          ></FormattedMessage>
-        </a>
-        <a
-          href="#contact"
-          activeClassName="selected"
-          className="header__home--base"
-        >
-          <FormattedMessage
-            id="app.header.contact"
-            defaultMessage="Contact Us"
-          ></FormattedMessage>
-        </a>
-        {props.children}
-      </div>
+      {width > 1000 ? (
+        <LargeNavigation>
+          <LanguageSelector></LanguageSelector>
+        </LargeNavigation>
+      ) : (
+        <SmallNavigation>
+          <LanguageSelector></LanguageSelector>
+        </SmallNavigation>
+      )}
     </div>
   );
 }

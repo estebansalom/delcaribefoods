@@ -10,6 +10,7 @@ import About from "./components/about/About";
 import Products from "./components/products/Products";
 import { Context } from "./components/Wrapper";
 import { useContext } from "react";
+import Claims from "./components/claims/Claims";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -27,18 +28,11 @@ const data = {
 };
 
 function App() {
-  const context = useContext(Context);
   return (
     <Router>
       <div className="App">
-        <Header>
-          <div className="">
-            <select value={context.locale} onChange={context.selectLanguage}>
-              <option value="en-US">English</option>
-              <option value="es-ES">Español</option>
-            </select>
-          </div>
-        </Header>
+        <Header></Header>
+        <Claims></Claims>
         <Products></Products>
         <Parallax></Parallax>
         <About></About>

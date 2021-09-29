@@ -1,0 +1,29 @@
+[
+    {
+        "name":"Plant Based",
+        "image":"https://res.cloudinary.com/esalomc/image/upload/v1632950120/PLANT-BASED-DIET-trimmy.png",
+        "description":"",
+        "class":""
+    },
+    {
+        "name":"Non GMO",
+        "image":"https://res.cloudinary.com/esalomc/image/upload/v1632950120/GMO-trimmy.png",
+        "description":"",
+        "class":""
+    },{
+        "name":"All Natural",
+        "image":"https://res.cloudinary.com/esalomc/image/upload/v1632950120/ALL-NATURAL-INGREDIENTS-trimmy.png",
+        "description":"",
+        "class":""
+    },{
+        "name":"No Preservatives",
+        "image":"https://res.cloudinary.com/esalomc/image/upload/v1632950120/NO-PRESERVATIVES-trimmy.png",
+        "description":"",
+        "class":"longer"
+    },{
+        "name":"No Trans",
+        "image":"https://res.cloudinary.com/esalomc/image/upload/v1632950120/NO-TRANS-FAT-trimmy.png",
+        "description":"",
+        "class":""
+    }
+]
