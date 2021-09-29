@@ -1,9 +1,6 @@
 import React from "react";
-import { NavLink as Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
-
-export default function Header() {
+import { FormattedMessage } from "react-intl";
+export default function Header(props) {
   return (
     <div className="row header__container--base">
       <div className="header__home-container--base">
@@ -21,22 +18,32 @@ export default function Header() {
           activeClassName="selected"
           className="header__home--base"
         >
-          Productos
+          <FormattedMessage
+            id="app.header.products"
+            defaultMessage="Products"
+          ></FormattedMessage>
         </a>
         <a
           href="#about"
           activeClassName="selected"
           className="header__home--base"
         >
-          Nosotros
+          <FormattedMessage
+            id="app.header.about"
+            defaultMessage="About Us"
+          ></FormattedMessage>
         </a>
         <a
           href="#contact"
           activeClassName="selected"
           className="header__home--base"
         >
-          Contacto
+          <FormattedMessage
+            id="app.header.contact"
+            defaultMessage="Contact Us"
+          ></FormattedMessage>
         </a>
+        {props.children}
       </div>
     </div>
   );

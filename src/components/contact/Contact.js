@@ -11,6 +11,7 @@ import {
   faFacebookF,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { FormattedMessage } from "react-intl";
 const initialState = {
   name: "",
   email: "",
@@ -47,37 +48,53 @@ const Contact = (props) => {
   };
   return (
     <div id="contact">
-      <h2>Contáctenos</h2>
+      <h2>
+        <FormattedMessage
+          id="app.contact.title"
+          defaultMessage="Contact Us"
+        ></FormattedMessage>
+      </h2>
       <div className="row">
         <div className="contact__main--base">
           <div className="contact__title--base">
             <p>
-              Por favor ingrese su información de forma completa en el
-              formulario presentado a continuación y uno de nuestros
-              representantes se comunicará con usted en cuanto sea posible.
+              <FormattedMessage
+                id="app.contact.description"
+                defaultMessage="Please fill out the form below using detailed information and one of our associates will be contacting you as soon as posible."
+              ></FormattedMessage>
             </p>
           </div>
           <form name="sentMessage" validate onSubmit={handleSubmit}>
             <div className="row contact__input-row--base">
               <div className="form-group contact__input--base">
+                <label htmlFor="name">
+                  <FormattedMessage
+                    id="app.contact.name"
+                    defaultMessage="Name"
+                  ></FormattedMessage>
+                </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className="form-control"
-                  placeholder="Nombre"
                   required
                   onChange={handleChange}
                 />
                 <p className="help-block text-danger"></p>
               </div>
               <div className="form-group contact__input--base">
+                <label htmlFor="email">
+                  <FormattedMessage
+                    id="app.contact.email"
+                    defaultMessage="Email"
+                  ></FormattedMessage>
+                </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   className="form-control"
-                  placeholder="Correo electrónico"
                   required
                   onChange={handleChange}
                 />
@@ -85,12 +102,17 @@ const Contact = (props) => {
               </div>
             </div>
             <div className="form-group">
+              <label htmlFor="name">
+                <FormattedMessage
+                  id="app.contact.message"
+                  defaultMessage="Message"
+                ></FormattedMessage>
+              </label>
               <textarea
                 name="message"
                 id="message"
                 className="form-control"
                 rows="6"
-                placeholder="Mensaje"
                 required
                 onChange={handleChange}
               ></textarea>
@@ -98,20 +120,31 @@ const Contact = (props) => {
             </div>
             <div id="success"></div>
             <button type="submit" className="btn-custom contact__button--base">
-              Enviar Mensaje
+              <FormattedMessage
+                id="app.contact.button"
+                defaultMessage="Send Message"
+              ></FormattedMessage>
             </button>
           </form>
         </div>
         <div className="contact-info">
           <div className="contact-item">
-            <h3>Información de contacto</h3>
+            <h3>
+              <FormattedMessage
+                id="app.contact.info.title"
+                defaultMessage="Contact Information"
+              ></FormattedMessage>
+            </h3>
             <p>
               <span>
                 <FontAwesomeIcon
                   icon={faLocationArrow}
                   className="fa"
                 ></FontAwesomeIcon>{" "}
-                Dirección
+                <FormattedMessage
+                  id="app.contact.address"
+                  defaultMessage="Address"
+                ></FormattedMessage>
               </span>
               {props.data ? props.data.address : "loading"}
             </p>
@@ -123,7 +156,10 @@ const Contact = (props) => {
                   icon={faPhone}
                   className="fa fa-phone"
                 ></FontAwesomeIcon>{" "}
-                Teléfono
+                <FormattedMessage
+                  id="app.contact.phone"
+                  defaultMessage="Phone"
+                ></FormattedMessage>
               </span>{" "}
               {props.data ? props.data.phone : "loading"}
             </p>
@@ -135,7 +171,10 @@ const Contact = (props) => {
                   icon={faEnvelopeOpen}
                   className="fa fa-envelope-o"
                 ></FontAwesomeIcon>{" "}
-                Correo electrónico
+                <FormattedMessage
+                  id="app.contact.email"
+                  defaultMessage="Email"
+                ></FormattedMessage>
               </span>{" "}
               <a href="mailto:max.cruz@delcaribefoodscr.com">
                 {props.data ? props.data.email : "loading"}
@@ -148,17 +187,6 @@ const Contact = (props) => {
       <div className="row">
         <div className="social">
           <ul>
-            {/* <li>
-                <a
-                  target="_blank"
-                  href={props.data ? props.data.instagram : "/"}
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="fa"
-                  ></FontAwesomeIcon>
-                </a>
-              </li> */}
             <li>
               <a target="_blank" href={props.data ? props.data.facebook : "/"}>
                 <FontAwesomeIcon

@@ -1,0 +1,59 @@
+[{
+    "name":"Plantains",
+    "nameId":"app.products.plantains.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1632869087/strips2.jpg",
+    "description":"",
+    "descriprionId":"app.products.plantains.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"},
+        {"id":"app.products.cuts.halfSlice", "name":"Half Slice"},
+        {"id":"app.products.cuts.slice", "name":"Strips"}
+    ]
+},{
+    "name":"Cassava",
+    "nameId":"app.products.cassava.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1623174172/yuca-chips.jpg",
+    "description":"",
+    "descriprionId":"app.products.cassava.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+},{
+    "name":"Sweet Potato",
+    "nameId":"app.products.sweetPotato.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1622354090/camote-chips.jpg",
+    "description":"",
+    "descriprionId":"app.products.sweetPotato.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+},{
+    "name":"Taro",
+    "nameId":"app.products.taro.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1623174773/malanga-taro-chips.jpg",
+    "description":"",
+    "descriprionId":"app.products.taro.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+},{
+    "name":"Dark Taro",
+    "nameId":"app.products.darkTaro.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1623174788/malanga-dark-chips.jpg",
+    "description":"",
+    "descriprionId":"app.products.darkTaro.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+}
+,{
+    "name":"Mixed Chips",
+    "nameId":"app.products.mixedChips.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1623175081/mixed-chips.jpg",
+    "description":"",
+    "descriprionId":"app.products.mixedChips.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+}
+]

@@ -1,10 +1,16 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 export default function About(props) {
   return (
     <div id="about" className="landing__about--base section">
       <div className="title-underline">
-        <h2 className="landing__about-title--base">Sobre Nosotros</h2>
+        <h2 className="landing__about-title--base">
+          <FormattedMessage
+            id="app.about.title"
+            defaultMessage="About Us"
+          ></FormattedMessage>
+        </h2>
       </div>
       <div className="row landing__about-info--base">
         <div className="landing__about-image--base">
@@ -12,28 +18,44 @@ export default function About(props) {
         </div>
         <div className="landing__about-container--base">
           <div className="landing__about-mision--base">
-            <h3>Misión</h3>
+            <h3>
+              <FormattedMessage
+                id="app.about.mission.title"
+                defaultMessage="Mission"
+              ></FormattedMessage>
+            </h3>
             <p>
-              Producir las mejores soluciones a las necesidades de nuestros
-              clientes por medio de nuestros productos snacks y congelados de
-              alta calidad. Así beneficiando a zonas rurales de nuestro país y
-              colaborando a la economía de muchas familias.
+              <FormattedMessage
+                id="app.about.mission.paragraph1"
+                defaultMessage="At Del Caribe Foods we are dedicated to building a trusting, long-
+                lasting and profitable partnership with our clients, providing high-
+                level end-to-end service while developing their brand."
+              ></FormattedMessage>
             </p>
             <p>
-              Proveerles a nuetros clientes un servicio y productos de calidad
-              inigualable, generar la confianza de empacarles bajo su marca
-              privada y crear un negocio rentable para ambas partes.
+              <FormattedMessage
+                id="app.about.mission.paragraph2"
+                defaultMessage="We value meeting our clients' standards with high-quality products
+                while offering sustainable work opportunities for rural Costa
+                Rican families."
+              ></FormattedMessage>
             </p>
           </div>
           <div className="landing__about-vision--base">
-            <h3>Visión</h3>
+            <h3>
+              <FormattedMessage
+                id="app.about.vision.title"
+                defaultMessage="Vision"
+              ></FormattedMessage>
+            </h3>
             <p>
-              Ser una empresa en constante crecimiento por medio de la
-              innovación y del conocimiento de los mercados internacionales que
-              trabajamos, suplir de productos con marcas privadas que sean de
-              gran éxito para nuestros clientes y que por medio de ellos podamos
-              llegar al consumidor final con productos de excelente calidad que
-              les haga revivir los sabores de su tierra.
+              <FormattedMessage
+                id="app.about.vision.paragraph"
+                defaultMessage="Our vision is to develop the best private label snacks for our
+                international markets while providing high-quality products that
+                are preferred by customers for delivering a fresh and authentic
+                taste that reminds them of their homeland."
+              ></FormattedMessage>
             </p>
           </div>
         </div>
