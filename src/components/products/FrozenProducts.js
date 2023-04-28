@@ -1,14 +1,14 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import ProductList from "../../data/products.json";
+import ProductList from "../../data/frozen_products.json";
 
-export default function Products() {
+export default function FrozenProducts() {
   return (
-    <div id="products">
+    <div id="frozen_products">
       <h2>
         <FormattedMessage
-          id="app.products.title"
-          defaultMessage="Our Snacks"
+          id="app.frozen_products.title"
+          defaultMessage="Our Frozen Products"
         ></FormattedMessage>
       </h2>
       <div className="landing__products--base">

@@ -14,7 +14,7 @@ export default function About(props) {
       </div>
       <div className="row landing__about-info--base">
         <div className="landing__about-image--base">
-          <img src="img/logo2.png" alt="" />
+          <img src="https://res.cloudinary.com/esalomc/image/upload/v1682650018/logo2.png" alt="" />
         </div>
         <div className="landing__about-container--base">
           <div className="landing__about-mision--base">

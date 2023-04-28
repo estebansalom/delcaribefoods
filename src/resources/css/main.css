@@ -229,6 +229,15 @@ li {
 #claims {
   padding-top: 145px; }
 
+#frozen_products {
+  background-color: #1d8165;
+  color: #f7ece0;
+  padding-top: 5%; }
+  #frozen_products h2 {
+    color: #f7ece0; }
+  #frozen_products h3 {
+    color: white; }
+
 #contact {
   padding: 2% 2% 15px;
   background-color: #f7ece0;

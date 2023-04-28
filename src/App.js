@@ -8,6 +8,7 @@ import Parallax from "./components/parallax/Parallax";
 import SmoothScroll from "smooth-scroll";
 import About from "./components/about/About";
 import Products from "./components/products/Products";
+import FrozenProducts from "./components/products/FrozenProducts";
 import { Context } from "./components/Wrapper";
 import { useContext } from "react";
 import Claims from "./components/claims/Claims";
@@ -34,6 +35,7 @@ function App() {
         <Header></Header>
         <Claims></Claims>
         <Products></Products>
+        <FrozenProducts></FrozenProducts>
         <Parallax></Parallax>
         <About></About>
         <Contact data={data.Contact} />

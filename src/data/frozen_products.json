@@ -1,0 +1,30 @@
+[{
+    "name":"Frozen Plantain",
+    "nameId":"app.products.frozenPlantain.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1682650411/platano_congelado_1.jpg",
+    "description":"",
+    "descriprionId":"app.products.frozenPlantain.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+},{
+    "name":"Frozen Cassava",
+    "nameId":"app.products.frozenCassava.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1682650412/yuca_congelada_1.jpg",
+    "description":"",
+    "descriprionId":"app.products.frozenCassava.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+}
+,{
+    "name":"Frozen Plantain Leafs",
+    "nameId":"app.products.plantainLeafs.name",
+    "image":"https://res.cloudinary.com/esalomc/image/upload/v1682657415/hoja_platano_3.jpg",
+    "description":"",
+    "descriprionId":"app.products.plantainLeafs.description",
+    "cuts":[
+        {"id":"app.products.cuts.coins", "name":"Coins"}
+    ]
+}
+]

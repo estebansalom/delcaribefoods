@@ -16,7 +16,7 @@ export default function Header(props) {
           activeClassName="selected"
           className="header__home--base"
         >
-          <img className="header__logo--base" src="/img/logo-claro.png"></img>
+          <img className="header__logo--base" src="https://res.cloudinary.com/esalomc/image/upload/v1682650018/logo-claro.png"></img>
         </a>
       </div>
       {width > 1000 ? (
