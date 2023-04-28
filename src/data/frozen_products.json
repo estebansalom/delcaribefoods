@@ -1,5 +1,5 @@
 [{
-    "name":"Frozen Plantain",
+    "name":"Frozen Pre-Fried Ripe Plantains",
     "nameId":"app.products.frozenPlantain.name",
     "image":"https://res.cloudinary.com/esalomc/image/upload/v1682650411/platano_congelado_1.jpg",
     "description":"",
@@ -18,7 +18,7 @@
     ]
 }
 ,{
-    "name":"Frozen Plantain Leafs",
+    "name":"Frozen Plantain Leaves",
     "nameId":"app.products.plantainLeafs.name",
     "image":"https://res.cloudinary.com/esalomc/image/upload/v1682657415/hoja_platano_3.jpg",
     "description":"",
